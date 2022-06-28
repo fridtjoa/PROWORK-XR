@@ -10,28 +10,28 @@ public class CameraChanger : MonoBehaviour
     public CinemachineVirtualCamera BuilderCamera;
     public CinemachineVirtualCamera PlayerCamera;
 
+    bool startPlay;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPlay = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && startPlay == false)
 
         {
             myAnimationController.SetBool("StartPlay", true);
-
+            startPlay = true;
         }
-
-        if (Input.GetKeyDown(KeyCode.V))
-
+        else if(Input.GetKeyDown(KeyCode.C) && startPlay == true)
         {
             myAnimationController.SetBool("StartPlay", false);
-
+            startPlay = false;
         }
 
 
