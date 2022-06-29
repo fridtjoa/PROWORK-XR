@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4896406677992742}
   - component: {fileID: 205505756585568742}
+  - component: {fileID: 6963450069331451490}
   m_Layer: 0
   m_Name: Arch_EntranceArch
   m_TagString: Untagged
@@ -62,6 +63,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23911079232650246}
   m_Enabled: 1
+--- !u!64 &6963450069331451490
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113540904901058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 495f0aba92fb14642a3ab2ab65181fa5, type: 3}
 --- !u!1 &1173353121596070
 GameObject:
   m_ObjectHideFlags: 0
